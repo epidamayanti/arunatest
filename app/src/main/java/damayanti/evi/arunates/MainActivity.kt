@@ -29,6 +29,15 @@ class MainActivity  : BaseActivity() {
 
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+        when (supportFragmentManager.fragments.last()) {
+            is ListFragment -> {
+
+            }
+        }
+    }
+
 
 
 
